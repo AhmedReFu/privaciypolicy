@@ -3,87 +3,258 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Nept Track — Privacy Policy</title>
-<style>
-  :root { --bg: #FFF8EA; --card: #FFFFFF; --ink: #1F1404; --muted: #5A4520; --accent: #F08A00; --line: #EAD7AE; }
-  @media (prefers-color-scheme: dark) {
-    :root { --bg: #0F0B05; --card: #211A0E; --ink: #FFF8EA; --muted: #EBD6AA; --accent: #FFC83D; --line: #3A2E18; }
-  }
-  * { box-sizing: border-box; }
-  body { margin: 0; background: var(--bg); color: var(--ink); font: 16px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
-  main { max-width: 720px; margin: 0 auto; padding: 40px 16px 64px; }
-  h1 { font-size: 30px; line-height: 1.2; margin: 0 0 4px; letter-spacing: -0.5px; }
-  .date { color: var(--muted); margin: 0 0 28px; }
-  section { background: var(--card); border: 1px solid var(--line); border-radius: 16px; padding: 18px 20px; margin: 0 0 14px; }
-  h2 { font-size: 18px; margin: 0 0 6px; color: var(--accent); }
-  p { margin: 0 0 8px; }
-  p:last-child { margin-bottom: 0; }
-  a { color: var(--accent); }
-</style>
+<title>Nept Track: Habits, Money &amp; Notes</title>
+<meta name="description" content="Tasks, habits, money and notes in one offline app. No sign-up. No cloud. Your data stays on your phone." />
+<meta name="theme-color" content="#FFFFFF" />
+<meta property="og:title" content="Nept Track: Habits &amp; Budget" />
+<meta property="og:description" content="Tasks, habits, money and notes in one offline app. No sign-up. No cloud." />
+<meta property="og:image" content="images/feature.png" />
+<meta property="og:type" content="website" />
+<link rel="icon" href="images/favicon.png" />
+<link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
-<main>
-  <h1>Nept Track Privacy Policy</h1>
-  <p class="date">Effective 22 September 2026</p>
 
-  <section>
-    <h2>Your data stays on your phone</h2>
-    <p>Tasks, habits, money records, notes and inbox captures are saved in a database on your device only. They are not uploaded to any server, and nobody else can read them.</p>
-    <p>Uninstalling the app deletes that database. Export a backup from Settings first if you want to keep it.</p>
+<div class="aurora" aria-hidden="true"><span></span><span></span><span></span></div>
+
+<header class="nav" id="nav">
+  <a class="brand" href="#top"><img src="images/icon.png" alt="" width="36" height="36" /> Nept Track</a>
+  <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false"><span></span><span></span></button>
+  <nav class="nav-links" id="navLinks">
+    <a href="#features">Features</a>
+    <a href="#screens">Screens</a>
+    <a href="#privacy">Privacy</a>
+    <a href="#faq">FAQ</a>
+    <a class="btn btn-small" href="https://play.google.com/store/apps/details?id=com.AhmedReFu.NeptTrack" target="_blank" rel="noopener">Get the app</a>
+  </nav>
+</header>
+
+<main id="top">
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-copy reveal">
+      <span class="pill">Offline · No sign-up · Free</span>
+      <h1>Your whole day, in one <span class="grad">calm</span> app.</h1>
+      <p class="lead">Nept Track keeps your tasks, habits, money and notes together. Nothing leaves your phone. No account, no cloud, no clutter.</p>
+      <div class="cta-row">
+        <a class="store-btn" href="https://play.google.com/store/apps/details?id=com.AhmedReFu.NeptTrack" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" width="26" height="26" aria-hidden="true"><path fill="currentColor" d="M3.6 1.8c-.3.3-.5.8-.5 1.4v17.6c0 .6.2 1.1.5 1.4l.1.1 9.9-9.9v-.2L3.7 1.7l-.1.1Zm13.3 13.9-3.3-3.3v-.2l3.3-3.3.1.1 3.9 2.2c1.1.6 1.1 1.7 0 2.3l-3.9 2.2h-.1Zm-.1.1L13.4 12 3.6 21.8c.4.4 1 .4 1.6.1l11.6-6.1M16.8 8.2 5.2 1.6c-.7-.4-1.2-.3-1.6.1l9.8 9.8 3.4-3.3Z"/></svg>
+          <span><small>Get it on</small>Google Play</span>
+        </a>
+        <a class="btn btn-ghost" href="#features">See what it does</a>
+      </div>
+      <ul class="hero-stats">
+        <li><strong data-count="5">0</strong><span>tools in one</span></li>
+        <li><strong data-count="6">0</strong><span>languages</span></li>
+        <li><strong data-count="0" data-suffix="">0</strong><span>accounts needed</span></li>
+      </ul>
+    </div>
+    <div class="hero-phone reveal">
+      <div class="phone tilt">
+        <img src="images/screens/01-tasks-today.png" alt="Nept Track Tasks screen showing today's progress and habits" />
+      </div>
+      <div class="float-card fc-1"><span class="dot dot-green"></span>Morning walk done</div>
+      <div class="float-card fc-2"><span class="dot dot-amber"></span>12 day streak 🔥</div>
+    </div>
   </section>
 
-  <section>
-    <h2>There is no account</h2>
-    <p>Nept Track does not ask you to sign up, and does not collect your name, email address or phone number.</p>
+  <!-- Features -->
+  <section class="section" id="features">
+    <div class="section-head reveal">
+      <span class="eyebrow">Features</span>
+      <h2>Four tools. One quiet home.</h2>
+      <p>Everything a normal day needs, without switching between five apps.</p>
+    </div>
+
+    <div class="features">
+      <article class="feature reveal" style="--c:#F59400">
+        <div class="f-icon">✅</div>
+        <h3>Tasks &amp; Habits</h3>
+        <ul>
+          <li>Daily habits and one-off to-dos, side by side</li>
+          <li>Streaks, best streaks and a 12-week heatmap</li>
+          <li>Rest days never break a streak</li>
+          <li>Reminders with your own sound</li>
+        </ul>
+      </article>
+      <article class="feature reveal" style="--c:#12A85F">
+        <div class="f-icon">💰</div>
+        <h3>Money</h3>
+        <ul>
+          <li>Log income and spending in seconds</li>
+          <li>Spending by category, with a clear chart</li>
+          <li>Monthly budgets with soft warnings</li>
+          <li>Daily average and month projection</li>
+        </ul>
+      </article>
+      <article class="feature reveal" style="--c:#7C5CFF">
+        <div class="f-icon">📝</div>
+        <h3>Notes</h3>
+        <ul>
+          <li>Headings, lists and checkboxes</li>
+          <li>Colours, pins and tags</li>
+          <li>Search across everything you wrote</li>
+          <li>Auto save, always</li>
+        </ul>
+      </article>
+      <article class="feature reveal" style="--c:#FF4F7B">
+        <div class="f-icon">⚡</div>
+        <h3>Capture Inbox</h3>
+        <ul>
+          <li>Dump any thought in one tap</li>
+          <li>Turn it into a task, expense or note later</li>
+          <li>Type "Spent 450 on transport" and it offers to log it</li>
+        </ul>
+      </article>
+    </div>
   </section>
 
-  <section>
-    <h2>Anonymous usage analytics</h2>
-    <p>The app uses Microsoft Clarity to understand which screens people use and where the app breaks. This records how you move through the app.</p>
-    <p>It does not record the words you write. Note text, task titles and transaction amounts are masked and are not sent anywhere.</p>
-    <p>The app also counts a few actions, such as creating a task, converting a capture or sharing a report, as plain event names. These carry only fixed labels, like "habit" or "expense", never your text, amounts or category names.</p>
-    <p>You can turn all of this off at any time in Settings &rsaquo; Your data &rsaquo; Share anonymous usage data. When it is off, nothing is recorded.</p>
+  <!-- Highlight: capture first -->
+  <section class="section split">
+    <div class="split-copy reveal">
+      <span class="eyebrow">What makes it different</span>
+      <h2>Capture first. Decide later.</h2>
+      <p>Most apps make you pick a type before you write. Nept Track lets you just write it down. When you have a minute, one tap turns it into the right thing.</p>
+      <div class="flow">
+        <span class="flow-chip">"Buy milk, 120"</span>
+        <span class="flow-arrow">→</span>
+        <span class="flow-chip flow-green">Expense · Groceries</span>
+      </div>
+      <div class="flow">
+        <span class="flow-chip">"Call the dentist"</span>
+        <span class="flow-arrow">→</span>
+        <span class="flow-chip flow-amber">To-do · Tomorrow</span>
+      </div>
+      <div class="flow">
+        <span class="flow-chip">"Gift idea for Mum"</span>
+        <span class="flow-arrow">→</span>
+        <span class="flow-chip flow-violet">Note · Pinned</span>
+      </div>
+    </div>
+    <div class="split-media reveal">
+      <div class="phone small"><img src="images/screens/05-pending-inbox.png" alt="Capture Inbox screen" loading="lazy" /></div>
+    </div>
   </section>
 
-  <section>
-    <h2>AI assistant (optional)</h2>
-    <p>Nept AI answers questions about your own habits and spending using Google Gemini. It is off until you read what it shares and turn it on.</p>
-    <p>When you ask a question, the app sends Google a summary it computes on your phone: habit names and how often you did them, the titles of open to-dos, spending totals per category, budgets and inbox counts, together with your question. Your notes, your captures, transaction notes and individual transactions are never sent.</p>
-    <p>Conversations are not saved by the app. Google processes requests under its own terms (<a href="https://ai.google.dev/gemini-api/terms">Gemini API terms</a>). Turn the assistant off at any time in Settings &rsaquo; Preferences &rsaquo; AI assistant.</p>
+  <!-- Screens -->
+  <section class="section" id="screens">
+    <div class="section-head reveal">
+      <span class="eyebrow">Screens</span>
+      <h2>Take a look inside</h2>
+      <p>Warm amber design, light and dark themes. Tap any screen to see it bigger.</p>
+    </div>
+    <div class="gallery-wrap reveal">
+      <button class="g-arrow g-prev" aria-label="Previous screens">‹</button>
+      <div class="gallery" id="gallery">
+        <figure><img src="images/screens/01-tasks-today.png" alt="Tasks today" loading="lazy" /><figcaption>Today's tasks</figcaption></figure>
+        <figure><img src="images/screens/02-task-insights.png" alt="Task insights" loading="lazy" /><figcaption>Habit insights</figcaption></figure>
+        <figure><img src="images/screens/03-money-overview.png" alt="Money overview" loading="lazy" /><figcaption>Money overview</figcaption></figure>
+        <figure><img src="images/screens/04-money-insights.png" alt="Money insights" loading="lazy" /><figcaption>Spending insights</figcaption></figure>
+        <figure><img src="images/screens/05-pending-inbox.png" alt="Capture inbox" loading="lazy" /><figcaption>Capture inbox</figcaption></figure>
+        <figure><img src="images/screens/06-notes.png" alt="Notes" loading="lazy" /><figcaption>Notes</figcaption></figure>
+        <figure><img src="images/screens/07-light-mode.png" alt="Light mode" loading="lazy" /><figcaption>Light mode</figcaption></figure>
+        <figure><img src="images/screens/08-onboarding.png" alt="Onboarding" loading="lazy" /><figcaption>Quick start</figcaption></figure>
+      </div>
+      <button class="g-arrow g-next" aria-label="Next screens">›</button>
+    </div>
   </section>
 
-  <section>
-    <h2>Advertising</h2>
-    <p>Nept Track shows ads from Google AdMob: on the insights screens, at the end of long lists, and now and then when you open the app. Ads never appear inside the task, money or note editors, and never interrupt you while you are saving or completing something.</p>
-    <p>Google may use your device's advertising ID and approximate location, derived from your IP address, to show ads that are more relevant to you. Where the law requires it, you are asked for consent first and can change your choice in Settings. You can reset or delete the advertising ID in your phone's settings.</p>
-    <p>Nothing you write, and none of your amounts, tasks or notes, is used to choose ads. See <a href="https://policies.google.com/technologies/ads">how Google uses data in ads</a>.</p>
+  <!-- Privacy -->
+  <section class="section" id="privacy">
+    <div class="privacy-card reveal">
+      <div class="privacy-copy">
+        <span class="eyebrow">Private by design</span>
+        <h2>Your records never leave your phone.</h2>
+        <p>No account and no cloud. Tasks, money and notes live in a database on your device.</p>
+        <a class="link-arrow" href="privacy-policy.html">Read the privacy policy →</a>
+      </div>
+      <ul class="privacy-list">
+        <li><span>📴</span><div><strong>Works fully offline</strong>No internet needed for anything you track.</div></li>
+        <li><span>🔒</span><div><strong>App lock</strong>Fingerprint, face or screen lock.</div></li>
+        <li><span>💾</span><div><strong>Your backup, your file</strong>Export and import whenever you like.</div></li>
+        <li><span>🙈</span><div><strong>No sign-up</strong>We never ask for your name or email.</div></li>
+      </ul>
+    </div>
   </section>
 
-  <section>
-    <h2>Reminders</h2>
-    <p>Reminders are scheduled by your phone and stay on your phone. Turning notifications off in Settings stops them immediately.</p>
+  <!-- Extras -->
+  <section class="section">
+    <div class="extras reveal">
+      <div class="extra"><strong>🔔 Custom sounds</strong><span>A gentle chime for prayer, a bright one for the gym.</span></div>
+      <div class="extra"><strong>🌙 Quiet hours</strong><span>Nothing buzzes while you sleep.</span></div>
+      <div class="extra"><strong>🤖 Nept AI</strong><span>Optional assistant that answers questions about your habits and spending.</span></div>
+      <div class="extra"><strong>🌍 6 languages</strong><span>English, বাংলা, हिन्दी, العربية, Español, 한국어</span></div>
+      <div class="extra"><strong>🌗 Light &amp; dark</strong><span>Follows your phone, or pick one.</span></div>
+      <div class="extra"><strong>⚡ Fast repeat</strong><span>Log yesterday's bus fare again in one tap.</span></div>
+    </div>
   </section>
 
-  <section>
-    <h2>App lock</h2>
-    <p>If you turn on the app lock, your phone checks your fingerprint, face or screen lock itself. Nept Track never sees or stores your biometric data.</p>
+  <!-- FAQ -->
+  <section class="section" id="faq">
+    <div class="section-head reveal">
+      <span class="eyebrow">FAQ</span>
+      <h2>Good questions</h2>
+    </div>
+    <div class="faq reveal">
+      <details>
+        <summary>Is Nept Track free?</summary>
+        <p>Yes. The app is free to download and use. It shows a few ads from Google AdMob, never inside the editors and never while you are saving something.</p>
+      </details>
+      <details>
+        <summary>Do I need an account?</summary>
+        <p>No. Open the app and start. There is no sign-up and no login.</p>
+      </details>
+      <details>
+        <summary>Where is my data stored?</summary>
+        <p>Only on your phone, in a local database. Uninstalling the app deletes it, so export a backup from Settings first if you want to keep it.</p>
+      </details>
+      <details>
+        <summary>Can I move my data to a new phone?</summary>
+        <p>Yes. Export a backup file from Settings, copy it to the new phone, and import it there.</p>
+      </details>
+      <details>
+        <summary>Does it work without internet?</summary>
+        <p>Everything you track works fully offline. Only ads and the optional AI assistant need a connection.</p>
+      </details>
+    </div>
   </section>
 
-  <section>
-    <h2>Your choices</h2>
-    <p>Export your data as a file at any time from Settings, and import it again later.</p>
-    <p>Erase everything from Settings. That is immediate and cannot be undone.</p>
-  </section>
-
-  <section>
-    <h2>Children</h2>
-    <p>Nept Track is not directed at children under 13 and does not knowingly collect data from them.</p>
-  </section>
-
-  <section>
-    <h2>Contact</h2>
-    <p>Questions about this policy: <a href="mailto:mdnazmulislam5990@gmail.com">mdnazmulislam5990@gmail.com</a></p>
+  <!-- Final CTA -->
+  <section class="section">
+    <div class="cta-card reveal">
+      <img src="images/icon.png" alt="" width="84" height="84" />
+      <h2>Start your day with Nept Track</h2>
+      <p>One app for tasks, habits, money and notes. Free on Android.</p>
+      <a class="store-btn dark" href="https://play.google.com/store/apps/details?id=com.AhmedReFu.NeptTrack" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" width="26" height="26" aria-hidden="true"><path fill="currentColor" d="M3.6 1.8c-.3.3-.5.8-.5 1.4v17.6c0 .6.2 1.1.5 1.4l.1.1 9.9-9.9v-.2L3.7 1.7l-.1.1Zm13.3 13.9-3.3-3.3v-.2l3.3-3.3.1.1 3.9 2.2c1.1.6 1.1 1.7 0 2.3l-3.9 2.2h-.1Zm-.1.1L13.4 12 3.6 21.8c.4.4 1 .4 1.6.1l11.6-6.1M16.8 8.2 5.2 1.6c-.7-.4-1.2-.3-1.6.1l9.8 9.8 3.4-3.3Z"/></svg>
+        <span><small>Get it on</small>Google Play</span>
+      </a>
+    </div>
   </section>
 </main>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <a class="brand" href="#top"><img src="images/icon.png" alt="" width="28" height="28" /> Nept Track</a>
+    <nav>
+      <a href="privacy-policy.html">Privacy Policy</a>
+      <a href="app-ads.txt">app-ads.txt</a>
+      <a href="mailto:YOUR_SUPPORT_EMAIL">Contact</a>
+    </nav>
+    <p>© <span id="year">2026</span> Nept Track. Made with care, offline first.</p>
+  </div>
+</footer>
+
+<!-- Lightbox -->
+<div class="lightbox" id="lightbox" hidden>
+  <button class="lb-close" aria-label="Close">×</button>
+  <button class="lb-nav lb-prev" aria-label="Previous">‹</button>
+  <img id="lbImg" alt="" />
+  <button class="lb-nav lb-next" aria-label="Next">›</button>
+  <p class="lb-cap" id="lbCap"></p>
+</div>
+
+<script src="js/main.js"></script>
 </body>
 </html>
